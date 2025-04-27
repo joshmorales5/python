@@ -9,7 +9,8 @@ class Test:
         del self.tv1
 
     def test_init(self):
-        assert self.__str__() == "Power = False, Channel = 0, Volume = 0"
+        assert self.tv1.__str__() == "Power = False, Channel = 0, Volume = 0"
+
         
 
     def test_power(self):
@@ -85,6 +86,7 @@ class Test:
 
         self.tv1.volume_down()
         assert self.tv1.__str__() == "Power = True, Channel = 0, Volume = 0"
+
 
 
 
